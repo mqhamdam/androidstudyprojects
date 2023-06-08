@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardBg"
+    tools:context=".UpdatePhoto">
+
+    <ImageButton
+        android:id="@+id/updImgBtn"
+        android:layout_width="255dp"
+        android:layout_height="238dp"
+        android:layout_marginTop="40dp"
+        android:scaleType="fitXY"
+        app:circularflow_defaultRadius="23dp"
+        app:circularflow_radiusInDP="15"
+        app:layout_constraintCircleRadius="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_add_photo_alternate_24" />
+
+    <EditText
+        android:id="@+id/updTitle"
+        android:layout_width="250dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="56dp"
+        android:ems="10"
+        android:hint="Title"
+        android:inputType="text"
+        android:textColor="@color/textColor"
+        android:textColorHint="#8BEDE7F6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addImageBtn" />
+
+    <EditText
+        android:id="@+id/updDescr"
+        android:layout_width="250dp"
+        android:layout_height="111dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Image Description"
+        android:inputType="textMultiLine"
+        android:textColorHint="#8BEDE7F6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/updTitle" />
+
+    <Button
+        android:id="@+id/btnUpd"
+        android:layout_width="212dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="84dp"
+        android:background="@drawable/layout_bg"
+        android:backgroundTint="@color/accentColor"
+        android:text="Update"
+        android:textColorHighlight="@color/accentColor"
+        android:textColorLink="@color/accentColor"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/updDescr" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
